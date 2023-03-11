@@ -1,4 +1,4 @@
-FROM steamcmd/steamcmd:ubuntu-18
+FROM steamcmd/steamcmd:ubuntu-22
 
 STOPSIGNAL SIGTERM
 
@@ -30,7 +30,7 @@ RUN dpkg --add-architecture i386 && \
 		bc \
 		jq \
 		tmux \
-		lib32gcc1 \
+		lib32gcc-s1 \
 		lib32stdc++6 \
 		libstdc++6 \
 		libstdc++6:i386 \
